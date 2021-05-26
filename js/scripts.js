@@ -59,6 +59,9 @@ $(function () {
 			$.ajax({
 				"url": "https://itunes.apple.com/search",
 				"dataType": "jsonp",
+				"processData": false, 
+				"contentType": false, 
+				"cache": false,
 				"data": {
 					"term": encodeURI(keyword),
 					"media": "movie",
@@ -117,4 +120,45 @@ $(function () {
 			*/
 		}
 	});	
+	
+	
+	//slider
+	$(".bxslider").html("<img src='img/ajax-loader.gif' alt='Loading' width='16' />");	
+				
+	$.get("https://itunes.apple.com/us/rss/topmovies/limit=100/xml" , function(data){
+		$(".bxslider").html("");
+		var texts = "";	
+		$(data).find("entry").each(function(){
+			//var vid = $(this).find('id').attr('im\\:id');						
+			var title = $(this).find("im\\:name").text();
+			var summary = $(this).find("summary").eq(0).text();
+			var image = $(this).find("im\\:image").eq(2).text();
+			var video = $(this).find("link").eq(1).attr("href");
+			var cat = $(this).find("category").eq(0).attr("term");
+			var rdate = $(this).find("im\\:releaseDate").eq(0).attr('label');
+			var rent = $(this).find("im\\:rentalPrice").eq(0).text();
+			var price = $(this).find("im\\:price").eq(0).text();
+			var artist = $(this).find("im\\:artist").text();
+			var bigImg = image.replace('113x170bb.png','300x300bb.png');
+															
+			body = '';
+			body = body + '<div class="img__container"><img src="'+bigImg+'" alt="" class="w-100 img__image" /><div class="img__middle"><button class="btn btn--details" data-mdb-toggle="modal" data-mdb-dismiss="modal" data-mdb-target="#movie_details" data-title="'+title.replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,'')+'" data-image="'+bigImg+'" data-summary="'+summary.replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,'')+'" data-category="'+cat+'" data-rdate="'+rdate+'" data-rent="'+rent+'" data-price="'+price+'" data-artist="'+artist+'" data-trailer="'+video+'">Details</button></div></div>';
+			body = body + '';
+			
+			$('.bxslider').append(body);
+
+		});//each loop end
+							
+		 var slider = $('.bxslider').bxSlider({
+			responsive: true,
+			auto: false,
+			preloadImages: 'visible',
+			pager: false,
+			slideMargin: 15,
+			minSlides: 6,
+			maxSlides: 10,
+			slideWidth: 200,
+			moveSlides: 6,
+		});
+	});
 });	

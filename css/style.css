@@ -49,21 +49,21 @@ header {background:#0F0F11;}
 		
 		.navbar {
 			padding-top: 1.5rem;
-			box-shadow: none !important;
+			box-shadow: none;
 			z-index: 1000;
 		}			
 			.navbar-expand-lg .navbar-nav {padding-left:10px;}
 			.navbar-expand-lg .navbar-nav .nav-link {font-family: 'Myriad Pro Light'; font-size:15px;}
 			
-				.navbar__main .nav-link {color: #C4C4C4 !important; font-weight:400;}
-				.navbar__main .nav-link:hover {color:#FFFFFF !important;}
-				.navbar__main .active .nav-link{color:#FFFFFF !important;}
+				.navbar__main .nav-link {color: #C4C4C4; font-weight:400;}
+				.navbar__main .nav-link:hover {color:#FFFFFF;}
+				.navbar__main .active .nav-link{color:#FFFFFF;}
 			
 			.navbar__main .nav-item{padding-left:30px; padding-right:20px;}
 			
 			.navbar__icons li {padding-left:5px;}
-			.navbar__icons li a.nav-link {color:#FFFFFF !important;}
-			.navbar__icons li a.nav-link:hover {color:#C4C4C4 !important;}
+			.navbar__icons li a.nav-link {color:#FFFFFF;}
+			.navbar__icons li a.nav-link:hover {color:#C4C4C4;}
 			
 			
 	.sub__header {position:relative; z-index:1005;}
@@ -76,8 +76,13 @@ header {background:#0F0F11;}
 				.btn--latest {background-color:#000000; color:#FFFFFF; border-radius:10px; padding: 5px 18px; border:1px solid #C2C2C2;}
 				
 				.serie__description {width:30%; font-size:17px;}
+				
 				.serie__buttons {}
-					.serie__buttons a {}
+					.serie__buttons .btn--watch {color:#000000;}
+						.serie__buttons .btn--watch:hover {color:#FFFFFF;}
+						
+					.serie__buttons .btn--add_list {color:#FFFFFF;}
+						.serie__buttons .btn--add_list:hover {color:#000000;}
 					
 					.carousel-indicators {margin-bottom: 7rem;}
 					
@@ -277,39 +282,39 @@ header {background:#0F0F11;}
 	.movie--image {padding-bottom:25px;}
 	
 	.modal-dialog-full-width {
-        width: 100% !important;
-        height: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        max-width:none !important;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        max-width:none;
 
     }
 
     .modal-content-full-width  {
-        height: auto !important;
-        min-height: 100% !important;
-        border-radius: 0 !important;
-        background-color: #ececec !important 
+        height: auto;
+        min-height: 100%;
+        border-radius: 0;
+        background-color: #ececec 
     }
 
     .modal-header-full-width  {
-        border-bottom: 1px solid #9ea2a2 !important;
+        border-bottom: 1px solid #9ea2a2;
     }
 
     .modal-footer-full-width  {
-        border-top: 1px solid #9ea2a2 !important;
+        border-top: 1px solid #9ea2a2;
     }
 	
 	#movie_trailer {overflow:hidden;}
 	
 	
 /**custom select here**/	
-	.chosen-wrapper {margin-top: 8px; width: 200px; color:#FFFFFF;}
+	.chosen-wrapper {margin-top: 5px; width: 200px; color:#FFFFFF;}
 	.chosen-container-single .chosen-default {background:#000000; color:#FFFFFF;}
-	.chosen-single {background: #00000 !important;}
-	.chosen-container-single .chosen-single {box-shadow:none !important; background: #000000 !important; color:#FFFFFF; padding: 3px 3px 3px 15px; height: 32px; border: 1px solid #aaa; border-radius: 15px; text-align:left;}
+	.chosen-single {background: #000000;}
+	.chosen-container-single .chosen-single {box-shadow:none; background: #000000; color:#FFFFFF; padding: 3px 3px 3px 15px; height: 32px; border: 1px solid #aaa; border-radius: 15px; text-align:left;}
 	
-	.chosen-container .chosen-drop{box-shadow:none !important; background: #000000 !important; color:#FFFFFF; border:1px solid #FF0000;}
+	.chosen-container .chosen-drop{box-shadow:none; background: #000000; color:#FFFFFF; border:1px solid #FF0000;}
 	
 	.chosen-container-active.chosen-with-drop.chosen-single {border:1px solid #FF0000; border-bottom-right-radius:15px; border-bottom-left-radius:15px; color:#FFFFFF;}
 	
@@ -340,7 +345,7 @@ header {background:#0F0F11;}
 	}
 	
 	.genre__header--select {
-		width: 150px !important;
+		width: 150px;
 	 }
 	 
 	
@@ -392,36 +397,83 @@ header {background:#0F0F11;}
 	  opacity: 1;
 	}
 
-	.img__text {
-	  background-color: #FFF;
-	  font-size: 14px;
-	  padding: 12px 32px;
-	}	
-	
-		.img__text  a {
-			color: #000000;
-		}
+	.img__container .btn--details {
+		background: #FFFFFF;
+		color: #000000;
+		padding: 10px 20px;
+		font-size: 12px;
+		font-weight: bold;
+	}
 
+	
+	
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
 	.navbar__icons li {display:inline;}
-	.genre__header {float:right; text-align:right !important;}
+	.genre__header {}
 	.select__recommended {margin-top:13px;}
 	
 	.carousel-item {text-align:center;}
-	.serie__description {width:100%; text-align:center;}
-	.serie__buttons {padding-top: 2rem !important; text-align:center;}
-	.carousel-indicators {
-		margin-bottom: 5rem;
+	.serie__description {width:100%; text-align:center; font-size: 15px;}
+	.serie__buttons {padding-top: 2rem; text-align:center;}
+	.carousel-indicators {margin-bottom: 2rem;}
+	
+	.footer__wrap ul.footer__menus{
+		margin:10px;
+		text-align: center;
+	}
+		.footer__wrap ul.footer__menus li {
+			padding: 0;
+			font-size: 14px;
+		}
+		
+	.img__text {
+		font-size: 10px;
+		padding: 4px;
+	}
+	
+	.main__wrap--title {
+		font-size:24px;
+		text-align: center;
+	}
+	
+	.btn-primary {
+		padding: 10px 30px 10px 20px;
+		font-size: 14px;
+		border-radius: 24px;
+	}
+		.btn-primary:hover {
+			padding: 10px 30px 10px 20px;
+			font-size: 14px;
+			border-radius: 24px;
+		}
+		
+	.btn-secondary {
+		padding: 10px 30px 10px 20px;
+		font-size: 14px;
+		border-radius: 24px;
+	}
+		.btn-secondary:hover {
+			padding: 10px 30px 10px 20px;
+			font-size: 14px;
+			border-radius: 24px;
+		}	
+		
+	.movie__details {    
+		margin: 30px auto;
+		text-align: center;
+	}	
+	
+	.movie__options {
+		text-align: center;
+	}
+	
+	.chosen-wrapper {
+		width: 75%;
 	}
 }
 
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-	
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
