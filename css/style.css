@@ -401,13 +401,12 @@ header {background:#0F0F11;}
 		.img__text  a {
 			color: #000000;
 		}
-	
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
-	/*.sortby__list li.sortby__list__letters {display:none;}*/
 	.navbar__icons li {display:inline;}
-	.genre__header {}
+	.genre__header {float:right; text-align:right;}
 	.select__recommended {margin-top:13px;}
 	
 	.carousel-item {text-align:center;}
