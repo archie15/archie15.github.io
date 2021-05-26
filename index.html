@@ -19,151 +19,140 @@
 	
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark d-lg-block">
-      <div class="container">       
-        <a class="navbar-brand nav-link" href="#"><img src="img/logo.png" alt="Netflix" title="Netflix" class="w-75" /> </a>
-        
-		<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbar__main"
-          aria-controls="navbar__main" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-		
-        <div class="collapse navbar-collapse" id="navbar__main">
-		  <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__main">
-            <li class="nav-item active"><a class="nav-link" aria-current="page" href="#intro">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" rel="nofollow">Movies</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Series</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">My list</a></li>
-          </ul>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark d-lg-block">
+			<div class="container">       
+				<a class="navbar-brand nav-link" href="#"><img src="img/logo.png" alt="Netflix" title="Netflix" class="w-75" /> </a>
 
-          <ul class="navbar-nav list-inline navbar__icons">            
-            <li>
-			  <a class="nav-link" href="#" id="nav__search"><i class="fas fa-search"></i></a>
-            </li>
-            <li>
-              <a class="nav-link" href="#">
-                <i class="fas fa-bell"></i>
-              </a>
-            </li>
-            <li>
-              <a class="nav-link" href="#">
-                <i class="fas fa-user-circle"></i> <i class="fas fa-chevron-down"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+				<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbar__main"
+				  aria-controls="navbar__main" aria-expanded="false" aria-label="Toggle navigation">
+				  <i class="fas fa-bars"></i>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbar__main">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__main">
+						<li class="nav-item active"><a class="nav-link" aria-current="page" href="#intro">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" rel="nofollow">Movies</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Series</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">My list</a></li>
+					</ul>
+					<ul class="navbar-nav list-inline navbar__icons">            
+						<li><a class="nav-link" href="#" id="nav__search"><i class="fas fa-search"></i></a></li>
+						<li><a class="nav-link" href="#"><i class="fas fa-bell"></i></a></li>
+						<li><a class="nav-link" href="#"><i class="fas fa-user-circle"></i> <i class="fas fa-chevron-down"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	
-	<div class="container sub__header">
-		<div class="row">
-			<div class="col-6 header__genre">
-				<div class="row">
-					<div class="col-lg-2 col-md-6 col-12">
-						<div class="title text-white px-3">Movies</div>
-					</div>
-					<div class="col-lg-10 col-md-6 col-12">
-						<div class="chosen-wrapper genre__header" data-js="custom-scroll">
-						  <select class="chosen-select genre__header--select" data-placeholder="File Genre">
-							<option>File Genre</option>
-							<option>Adventure</option>
-							<option>Animation</option>
-							<option>Biography</option>
-							<option>Crime</option>
-							<option>Comedy</option>
-							<option>Documentary</option>
-							<option>Drama</option>
-						  </select>
+		<!--sub__header-->
+		<div class="container sub__header">
+			<div class="row">
+				<div class="col-6 header__genre">
+					<div class="row">
+						<div class="col-lg-2 col-md-6 col-12">
+							<div class="title text-white px-3">Movies</div>
+						</div>
+						<div class="col-lg-10 col-md-6 col-12">
+							<div class="chosen-wrapper genre__header" data-js="custom-scroll">
+							  <select class="chosen-select genre__header--select" data-placeholder="File Genre">
+								<option>File Genre</option>
+								<option>Adventure</option>
+								<option>Animation</option>
+								<option>Biography</option>
+								<option>Crime</option>
+								<option>Comedy</option>
+								<option>Documentary</option>
+								<option>Drama</option>
+							  </select>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-6 header__sortby">
-				<ul class="sortby__list">
-					<li class="sortby__list__letters">
-						<a href="#"><img src="img/icon-sortby-leter.png" alt="" class="w-75" /></a>
-					</li>	
-					<li>
-						<div class="chosen-wrapper select__recommended" data-js="custom-scroll">
-						  <select class="chosen-select" data-placeholder="RECOMMENDED FOR YOU">
-							<option>RECOMMENDED FOR YOU</option>
-							<option>Adventure</option>
-							<option>Animation</option>
-							<option>Biography</option>
-							<option>Crime</option>
-							<option>Comedy</option>
-							<option>Documentary</option>
-							<option>Drama</option>
-						  </select>
-						</div>
-					</li>
-				</ul>
+				<div class="col-6 header__sortby">
+					<ul class="sortby__list">
+						<li class="sortby__list__letters">
+							<a href="#"><img src="img/icon-sortby-leter.png" alt="" class="w-75" /></a>
+						</li>	
+						<li>
+							<div class="chosen-wrapper select__recommended" data-js="custom-scroll">
+							  <select class="chosen-select" data-placeholder="RECOMMENDED FOR YOU">
+								<option>RECOMMENDED FOR YOU</option>
+								<option>Adventure</option>
+								<option>Animation</option>
+								<option>Biography</option>
+								<option>Crime</option>
+								<option>Comedy</option>
+								<option>Documentary</option>
+								<option>Drama</option>
+							  </select>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
 	
-	<!--carousel-->
-	<div id="introCarousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-	  <ol class="carousel-indicators">
-		<li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
-		<li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
-	  </ol>
+		<!--banner__carousel-->
+		<div id="banner__carousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-mdb-target="#banner__carousel" data-mdb-slide-to="0" class="active"></li>
+				<li data-mdb-target="#banner__carousel" data-mdb-slide-to="1"></li>
+			</ol>
 
-	  <!-- Inner -->
-	  <div class="carousel-inner">        
-			<!-- item -->
-			<div class="carousel-item active">
-			  <div class="mask" style="">
-				<div class="d-flex align-items-center h-100">
-				  <div class="container text-white px-4 mt-5">
-						<img src="img/img-serie1.png" alt="" />
-						<div class="serie__description pt-3 px-2">He is an evil villain who wants to steal the moon. Fortunately for us, three girls are not going to let this happen!</div>
-						<div class="serie__buttons pt-5">
-							<button class="btn btn-primary btn--watch" data-mdb-toggle="modal" data-mdb-dismiss="modal" data-mdb-target="#movie_details" data-title="Despicable Me 3" data-image="https://is2-ssl.mzstatic.com/image/thumb/Video113/v4/5b/3e/b7/5b3eb7e7-b642-f73e-0443-caac6aac3c70/pr_source.lsr/460x0w.webp" data-summary="Illumination, who brought moviegoers Despicable Me, Despicable Me 2, and the biggest animated hit of 2015, Minions, continues the story of Gru, Lucy, their adorable daughters—Margo, Edith and Agnes—and the Minions in Despicable Me 3. After he is fired from the Anti-Villain League for failing to take down Balthazar Bratt, the latest bad guy to threaten humanity, Gru finds himself in the midst of a major identity crisis. But when a mysterious stranger shows up to inform Gru that he has a long-lost twin brother—a brother who desperately wishes to follow in his twin’s despicable footsteps—one former super-villain will rediscover just how good it feels to be bad." data-category="Kids & Family" data-rdate="2017" data-rent="3.99" data-price="14.99" data-artist="Gru, Lucy" data-trailer="https://video-ssl.itunes.apple.com/itunes-assets/Video117/v4/57/83/e8/5783e856-c7f2-fac3-7ab4-885cd3bf2503/mzvf_6166247870156417323.640x352.h264lc.U.p.m4v"><i class="fas fa-play"></i> WATCH</button>
-							<button class="btn btn-secondary btn--add_list"><i class="fas fa-plus"></i> ADD LIST</button>
-						</div>
-				  </div>				  
+			<!-- carousel-inner -->
+			<div class="carousel-inner">        
+				<!-- carousel-item -->
+				<div class="carousel-item active">
+				  <div class="mask" style="">
+					<div class="d-flex align-items-center h-100">
+					  <div class="container text-white px-4 mt-5">
+							<img src="img/img-serie1.png" alt="" />
+							<div class="serie__description pt-3 px-2">He is an evil villain who wants to steal the moon. Fortunately for us, three girls are not going to let this happen!</div>
+							<div class="serie__buttons pt-5">
+								<button class="btn btn-primary btn--watch" data-mdb-toggle="modal" data-mdb-dismiss="modal" data-mdb-target="#movie_details" data-title="Despicable Me 3" data-image="https://is2-ssl.mzstatic.com/image/thumb/Video113/v4/5b/3e/b7/5b3eb7e7-b642-f73e-0443-caac6aac3c70/pr_source.lsr/460x0w.webp" data-summary="Illumination, who brought moviegoers Despicable Me, Despicable Me 2, and the biggest animated hit of 2015, Minions, continues the story of Gru, Lucy, their adorable daughters—Margo, Edith and Agnes—and the Minions in Despicable Me 3. After he is fired from the Anti-Villain League for failing to take down Balthazar Bratt, the latest bad guy to threaten humanity, Gru finds himself in the midst of a major identity crisis. But when a mysterious stranger shows up to inform Gru that he has a long-lost twin brother—a brother who desperately wishes to follow in his twin’s despicable footsteps—one former super-villain will rediscover just how good it feels to be bad." data-category="Kids & Family" data-rdate="2017" data-rent="3.99" data-price="14.99" data-artist="Gru, Lucy" data-trailer="https://video-ssl.itunes.apple.com/itunes-assets/Video117/v4/57/83/e8/5783e856-c7f2-fac3-7ab4-885cd3bf2503/mzvf_6166247870156417323.640x352.h264lc.U.p.m4v"><i class="fas fa-play"></i> WATCH</button>
+								<button class="btn btn-secondary btn--add_list"><i class="fas fa-plus"></i> ADD LIST</button>
+							</div>
+					  </div>				  
+					</div>
+				  </div>
 				</div>
-			  </div>
-			</div>
-			
-			<!-- item -->
-			<div class="carousel-item">
-			  <div class="mask" style="">
-				<div class="d-flex align-items-center h-100">
-				  <div class="container text-white px-4 mt-5">
-						<img src="img/img-serie1.png" alt="" />
-						<div class="serie__description pt-3 px-2">A new theme park, built on the original site of Jurassic Park, creates a genetically modified hybrid dinosaur, the Indominus Rex, which escapes containment and goes on a killing spree.</div>
-						<div class="serie__buttons pt-5">
-							<button class="btn btn-primary btn--watch" data-mdb-toggle="modal"  data-mdb-dismiss="modal" data-mdb-target="#movie_details" data-title="Jurassic World: Fallen Kingdom" data-image="https://is2-ssl.mzstatic.com/image/thumb/Video113/v4/ed/6c/13/ed6c13f4-2118-7b65-0af2-86f3ace3926f/pr_source.jpg/460x0w.webp" data-summary="With all of the wonder, adventure and thrills synonymous with one of the most popular and successful series in cinema history, this all-new motion-picture event sees the return of favorite characters and dinosaurs—along with new breeds more awe-inspiring and terrifying than ever before. Welcome to 'Jurassic World: Fallen Kingdom.' Stars Pratt and Howard return alongside executive producers Steven Spielberg and Colin Trevorrow for Jurassic World: Fallen Kingdom.' They are joined by co-stars James Cromwell, Ted Levine, Justice Smith, Geraldine Chaplin, Daniella Pineda, Toby Jones, Rafe Spall and Isabella Sermon, while B.D. Wong and Jeff Goldblum reprise their roles." data-category="Action & Adventure" data-rdate="2018" data-rent="3.99" data-price="14.99" data-artist="Steven Spielberg and Colin Trevorro" data-trailer="https://video-ssl.itunes.apple.com/itunes-assets/Video125/v4/f6/a1/b8/f6a1b8bb-78a1-1d77-4a25-aeb7ab2766d2/mzvf_3749992773688337511.640x352.h264lc.U.p.m4v"><i class="fas fa-play"></i> WATCH</button>
-							<button class="btn btn-secondary btn--add_list"><i class="fas fa-plus"></i> ADD LIST</button>
-						</div>
-				  </div>				  
-				</div>
-			  </div>
-			</div>
-	  </div>
-	  <!-- Inner -->
-	</div>
 
-  </header>
+				<!-- carousel-item -->
+				<div class="carousel-item">
+				  <div class="mask" style="">
+					<div class="d-flex align-items-center h-100">
+					  <div class="container text-white px-4 mt-5">
+							<img src="img/img-serie1.png" alt="" />
+							<div class="serie__description pt-3 px-2">A new theme park, built on the original site of Jurassic Park, creates a genetically modified hybrid dinosaur, the Indominus Rex, which escapes containment and goes on a killing spree.</div>
+							<div class="serie__buttons pt-5">
+								<button class="btn btn-primary btn--watch" data-mdb-toggle="modal"  data-mdb-dismiss="modal" data-mdb-target="#movie_details" data-title="Jurassic World: Fallen Kingdom" data-image="https://is2-ssl.mzstatic.com/image/thumb/Video113/v4/ed/6c/13/ed6c13f4-2118-7b65-0af2-86f3ace3926f/pr_source.jpg/460x0w.webp" data-summary="With all of the wonder, adventure and thrills synonymous with one of the most popular and successful series in cinema history, this all-new motion-picture event sees the return of favorite characters and dinosaurs—along with new breeds more awe-inspiring and terrifying than ever before. Welcome to 'Jurassic World: Fallen Kingdom.' Stars Pratt and Howard return alongside executive producers Steven Spielberg and Colin Trevorrow for Jurassic World: Fallen Kingdom.' They are joined by co-stars James Cromwell, Ted Levine, Justice Smith, Geraldine Chaplin, Daniella Pineda, Toby Jones, Rafe Spall and Isabella Sermon, while B.D. Wong and Jeff Goldblum reprise their roles." data-category="Action & Adventure" data-rdate="2018" data-rent="3.99" data-price="14.99" data-artist="Steven Spielberg and Colin Trevorro" data-trailer="https://video-ssl.itunes.apple.com/itunes-assets/Video125/v4/f6/a1/b8/f6a1b8bb-78a1-1d77-4a25-aeb7ab2766d2/mzvf_3749992773688337511.640x352.h264lc.U.p.m4v"><i class="fas fa-play"></i> WATCH</button>
+								<button class="btn btn-secondary btn--add_list"><i class="fas fa-plus"></i> ADD LIST</button>
+							</div>
+					  </div>				  
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</header>
   
-  <main class="main__wrap">
-	  <div class="container">
-		<section>
-			<div class="row">
-				<div class="col-md-6 gx-5 mb-4">
-					<h1 class="main__wrap--title"><i class="fas fa-rocket fa-xs"></i> <span class="px-2">Popular in Netflix</span></h1>
-				 </div>
-			</div>
-		</section>
-	  </div>
-	  <div class="popular__movies" id="popular">
+	<main class="main__wrap">
+		<div class="container">
+			<section>
+				<div class="row">
+					<div class="col-md-6 gx-5 mb-4">
+						<h1 class="main__wrap--title"><i class="fas fa-rocket fa-xs"></i> <span class="px-2">Popular in Netflix</span></h1>
+					 </div>
+				</div>
+			</section>
+		</div>
+		<div class="popular__movies" id="popular">
 			<div class="bxslider"></div>
-	  </div>	
+		</div>	
 	  
-	  <div class="search__results" id="search__results" style="display:none;">
+		<div class="search__results" id="search__results" style="display:none;">
 		  <div class="container">
 			<section>
 				<div class="row">
@@ -179,11 +168,11 @@
 				<div id="search__results--display"></div>
 			</div>
 		  </div>
-	  </div>
-  </main>
+		</div>
+	</main>
   
   
-  <footer class="footer__wrap">
+	<footer class="footer__wrap">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-12 mt-2">
@@ -230,12 +219,12 @@
 				</ul>
 			</div>
 		</div>
-  </footer>
-  
+	</footer>
+	  
 	<script src="js/mdb.min.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.js"></script>
 	<script src='js/scroll.js'></script> 
-	
+
 	<!-- Modal -->
 	<div class="modal fade" id="movie_details" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1" aria-labelledby="movie_title" aria-hidden="true">
 	  <div class="modal-dialog modal-dialog-scrollable modal-xl">
@@ -271,7 +260,7 @@
 		</div>
 	  </div>
 	</div>
-	
+
 	<!--modal trailer-->
 	<div class="modal fade" id="movie_trailer" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1" aria-labelledby="movie_title" aria-hidden="true">
 		<div class="modal-dialog-full-width modal-dialog momodel modal-fluid">
@@ -288,6 +277,6 @@
 			</div>
 		</div>
 	</div>
-	
+		
 </body>
 </html>

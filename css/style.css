@@ -19,7 +19,7 @@ body {
 header {background:#0F0F11;}	
 
 /* Carousel styling */
-#introCarousel,
+#banner__carousel,
 .carousel-inner,
 .carousel-item,
 .carousel-item.active {
@@ -489,7 +489,7 @@ header {background:#0F0F11;}
 }
 /* Height for devices larger than 576px */
 @media (min-width: 992px) {
-	#introCarousel {
+	#banner__carousel {
 	  margin-top: -130px; 
 	}
 }
