@@ -25,62 +25,62 @@ body {
 
 header {background:#0F0F11;}	
 
-	.carousel-item:nth-child(1) {
-		background-image: url('../img/slider_01.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-	  }
-	  
-	  .carousel-item:nth-child(2) {
-		background-image: url('../img/slider_02.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-	  }
+		.carousel-item:nth-child(1) {
+			background-image: url('../img/slider_01.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		  }
+		  
+		  .carousel-item:nth-child(2) {
+			background-image: url('../img/slider_02.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		  }
 
-	  .carousel-item:nth-child(3) {
-		background-image: url('../img/slider_01.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-	  }
-	  
-	
-	.navbar {
-		padding-top: 1.5rem;
-		box-shadow: none !important;
-		z-index: 1000;
-	}			
-		.navbar-expand-lg .navbar-nav {padding-left:10px;}
-		.navbar-expand-lg .navbar-nav .nav-link {font-family: 'Myriad Pro Light'; font-size:15px;}
+		  .carousel-item:nth-child(3) {
+			background-image: url('../img/slider_01.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		  }
+		  
 		
-			.navbar__main .nav-link {color: #C4C4C4 !important; font-weight:400;}
-			.navbar__main .nav-link:hover {color:#FFFFFF !important;}
-			.navbar__main .active .nav-link{color:#FFFFFF !important;}
-		
-		.navbar__main .nav-item{padding-left:30px; padding-right:20px;}
-		
-		.navbar__icons li {padding-left:5px;}
-		.navbar__icons li a.nav-link {color:#FFFFFF !important;}
-		.navbar__icons li a.nav-link:hover {color:#C4C4C4 !important;}
-		
-		
+		.navbar {
+			padding-top: 1.5rem;
+			box-shadow: none !important;
+			z-index: 1000;
+		}			
+			.navbar-expand-lg .navbar-nav {padding-left:10px;}
+			.navbar-expand-lg .navbar-nav .nav-link {font-family: 'Myriad Pro Light'; font-size:15px;}
+			
+				.navbar__main .nav-link {color: #C4C4C4 !important; font-weight:400;}
+				.navbar__main .nav-link:hover {color:#FFFFFF !important;}
+				.navbar__main .active .nav-link{color:#FFFFFF !important;}
+			
+			.navbar__main .nav-item{padding-left:30px; padding-right:20px;}
+			
+			.navbar__icons li {padding-left:5px;}
+			.navbar__icons li a.nav-link {color:#FFFFFF !important;}
+			.navbar__icons li a.nav-link:hover {color:#C4C4C4 !important;}
+			
+			
 	.sub__header {position:relative; z-index:1005;}
-		.sub__header .title {font-family: 'Myriad Pro Regular'; font-size:24px; font-weight:400; display:inline-flex;}
-				 
+			.sub__header .title {font-family: 'Myriad Pro Regular'; font-size:24px; font-weight:400; display:inline-flex;}
+					 
 	.header__sortby {text-align:right;}			
-		.sortby__list {}
-			.sortby__list li{display:inline-flex;}
-			
-			.btn--latest {background-color:#000000; color:#FFFFFF; border-radius:10px; padding: 5px 18px; border:1px solid #C2C2C2;}
-			
-			.serie__description {width:30%; font-size:17px;}
-			.serie__buttons {}
-				.serie__buttons a {}
+			.sortby__list {}
+				.sortby__list li{display:inline-flex;}
 				
-				.carousel-indicators {margin-bottom: 7rem;}
+				.btn--latest {background-color:#000000; color:#FFFFFF; border-radius:10px; padding: 5px 18px; border:1px solid #C2C2C2;}
 				
+				.serie__description {width:30%; font-size:17px;}
+				.serie__buttons {}
+					.serie__buttons a {}
+					
+					.carousel-indicators {margin-bottom: 7rem;}
+					
 	.main__wrap {
 		width:100%;
 		height:auto;
@@ -130,6 +130,12 @@ header {background:#0F0F11;}
 		}
 		
 		.bx-wrapper .bx-loading {background: linear-gradient(to bottom, rgba(14, 14, 16, 0) 0%, rgba(14, 14, 16, 1) 100%);}
+		
+		.bx-wrapper .bx-controls-direction a {height:85px;}
+		.bx-wrapper .bx-prev {left: 10px; background: url('../img/btn-prev.png') no-repeat -50px 0;}
+		.bx-wrapper .bx-next {right: 10px; background: url('../img/btn-next.png') no-repeat 0 0;}
+			.bx-wrapper .bx-next:hover {background: url('../img/btn-next.png') no-repeat -58px 0;}
+			.bx-wrapper .bx-next:focus {background: url('../img/btn-next.png') no-repeat -58px 0;}
 		
 		
 	.footer__wrap {
