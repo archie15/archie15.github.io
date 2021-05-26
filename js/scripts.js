@@ -11,7 +11,7 @@ $(function () {
 		$('#movie_title').html(title);
 		
 		var img = $(e.relatedTarget).data('image');
-		$('.movie--image img').attr('src', img);
+		$('.movie--image').html('<img src="'+img+'" alt="'+title+'" class="w-100" />'); 
 		
 		var summary = $(e.relatedTarget).data('summary');
 		$('.movie__summary').html(summary);
