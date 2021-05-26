@@ -406,7 +406,7 @@ header {background:#0F0F11;}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
 	.navbar__icons li {display:inline;}
-	.genre__header {float:right; text-align:right;}
+	.genre__header {float:right; text-align:right !important;}
 	.select__recommended {margin-top:13px;}
 	
 	.carousel-item {text-align:center;}
