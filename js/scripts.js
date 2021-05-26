@@ -56,6 +56,42 @@ $(function () {
 			$('#search__results--display').html('<img src="img/ajax-loader.gif" alt="loading" />');			
 		
 			var texts = "";
+			$.ajax({
+				"url": "https://itunes.apple.com/search",
+				"dataType": "jsonp",
+				"data": {
+					"term": encodeURI(keyword),
+					"media": "movie",
+					"attribute": "featureFilmTerm"
+				},
+				"error": function (jqXHR, textStatus, message) {
+					console.log(message);
+				},
+				"success": function (data, textStatus, jqXHR) {
+					console.log(data);
+					data.results.forEach(function (val, index, array) {
+						$('#search__results--display').html('');	
+						
+						var artist = val.artistName;
+						var title = val.trackName;
+						var video = val.previewUrl;
+						var price = val.trackPrice;
+						var rent = val.trackRentalPrice;
+						var cat = val.primaryGenreName;
+						var summary = val.longDescription;
+						var rdate = val.releaseDate;
+						var img = val.artworkUrl100;
+						var bigImg = img.replace('100x100bb.jpg','300x300bb.jpg');
+						
+						texts = '<div class="container"> <div class="row text-center"><div class="col-4">';
+						texts = texts + '<div class="img__container"><img src="'+bigImg+'" alt="" class="img__image" /><div class="img__middle"><div class="img__text"><a href="#movie_details" data-mdb-toggle="modal"  data-mdb-dismiss="modal" data-mdb-target="#movie_details" data-title="'+title.replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,'')+'" data-image="'+bigImg+'" data-summary="'+summary.replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,'')+'" data-category="'+cat+'" data-rdate="'+rdate+'" data-rent="'+rent+'" data-price="'+price+'" data-artist="'+artist+'" data-trailer="'+video+'">Details</a></div></div></div><h4>'+title+'</h4>';
+						texts = texts + '</div></div></div>';
+						
+						$('#search__results--display').append(texts);
+					});
+				}
+			});
+			/*
 			$.getJSON("https://itunes.apple.com/search?media=movie&attribute=featureFilmTerm&term="+encodeURI(keyword)+"&callback=?", function (data) {		
 				var count = data.resultCount;
 					if(count>0) {
@@ -78,6 +114,7 @@ $(function () {
 					}	
 				$('#search__results--display').html(texts);
 			});
+			*/
 		}
 	});	
 });	
