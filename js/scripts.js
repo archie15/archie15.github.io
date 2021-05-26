@@ -11,7 +11,7 @@ $(function () {
 		$('#movie_title').html(title);
 		
 		var img = $(e.relatedTarget).data('image');
-		$('.movie--image').html('<img src="'+img+'" alt="'+title+'" class="w-100" />'); 
+		$('.movie--image--img').attr('src', img); 
 		
 		var summary = $(e.relatedTarget).data('summary');
 		$('.movie__summary').html(summary);
@@ -37,6 +37,10 @@ $(function () {
 	
 	$('.btn--back').on('hidden.bs.modal', function (e) { 
 		jQuery('.movie--trailer').attr("src", jQuery(".movie--trailer").attr("src"));
+		/*jQuery('.movie--image--img').attr("src", jQuery(".movie--image--img").attr("src"));
+		
+		var img = jQuery(".movie--image--img").attr("src");
+		alert(img);*/
 	}); 
 	
 			
