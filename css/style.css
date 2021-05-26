@@ -472,6 +472,11 @@ header {background:#0F0F11;}
 	.chosen-wrapper {
 		width: 75%;
 	}
+	
+	.img__container .btn--details {
+		padding: 8px 10px;
+		font-size: 10px;
+	}
 }
 
 
