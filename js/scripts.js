@@ -5,6 +5,42 @@ $(function () {
 		$(this).attr('src', $(this).attr('src').replace(/\.jpg/, '-hover.png') );
 	});
 	
+	
+	//banner modal show manually to prevent console error
+	$('.btn--watch').on('click',function(e) {
+		var title = $(this).data('title');
+		$('#movie_title').html(title);
+		
+		var img = $(this).data('image');
+		$('.movie--image--img').attr('src', img); 
+		$('.movie--image--img').attr('alt', title); 
+		
+		var summary = $(this).data('summary');
+		$('.movie__summary').html(summary);
+		
+		var category = $(this).data('category');
+		$('.movie--category').html('<small>'+category+'</small>');
+		
+		var release = $(this).data('rdate');
+		$('.movie--rdate').html('<small>'+release+'</small>');
+		
+		var rent = $(this).data('rent');
+		$('.movie--rent').html(rent);
+		
+		var price = $(this).data('price');
+		$('.movie--price').html(price);				
+		
+		var artist = $(this).data('artist');
+		$('.movie--artist').html(artist);
+		
+		var trailer = $(this).data('trailer');
+		$('.movie--trailer').attr('src', trailer);
+		
+		
+		$('#movie_details').modal('show');	
+	});
+	
+	
 	//modal event			
 	$('#movie_details').on('show.bs.modal', function(e) {	
 		var title = $(e.relatedTarget).data('title');
@@ -39,7 +75,6 @@ $(function () {
 	$('.btn--back').on('hidden.bs.modal', function (e) { 
 		jQuery('.movie--trailer').attr("src", jQuery(".movie--trailer").attr("src"));
 	}); 
-	
 			
 	//search click
 	$('#search__results').hide();
