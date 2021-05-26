@@ -1,1 +1,334 @@
-Hell World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Netflix</title>
+   
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.min.css">  
+    <link rel="stylesheet" href="css/fonts/MyriadPro/style.css" />	 
+    <link rel="stylesheet" href="css/style.css" />
+	 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark d-lg-block">
+      <div class="container">       
+        <a class="navbar-brand nav-link" href="#"><img src="img/logo.png" alt="Netflix" title="Netflix" class="w-75" /> </a>
+        
+		<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbar__main"
+          aria-controls="navbar__main" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+		
+        <div class="collapse navbar-collapse" id="navbar__main">
+		  <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__main">
+            <li class="nav-item active"><a class="nav-link" aria-current="page" href="#intro">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" rel="nofollow">Movies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Series</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">My list</a></li>
+          </ul>
+
+          <ul class="navbar-nav list-inline navbar__icons">            
+            <li>
+			  <a class="nav-link" href="#" id="nav__search"><i class="fas fa-search"></i></a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fas fa-bell"></i>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fas fa-user-circle"></i> <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+	<div class="container sub__header">
+		<div class="row">
+			<div class="col header__genre">
+				<div class="row">
+					<div class="col-2">
+						<div class="title text-white px-3">Movies</div>
+					</div>
+					<div class="col">
+						<div class="chosen-wrapper genre__header" data-js="custom-scroll">
+						  <select class="chosen-select genre__header--select" data-placeholder="File Genre">
+							<option>File Genre</option>
+							<option>Adventure</option>
+							<option>Animation</option>
+							<option>Biography</option>
+							<option>Crime</option>
+							<option>Comedy</option>
+							<option>Documentary</option>
+							<option>Drama</option>
+						  </select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col header__sortby">
+				<ul class="sortby__list">
+					<li class="sortby__list__letters">
+						<a href="#"><img src="img/icon-sortby-leter.png" alt="" class="w-75" /></a>
+					</li>	
+					<li>
+						<div class="chosen-wrapper select__recommended" data-js="custom-scroll">
+						  <select class="chosen-select" data-placeholder="RECOMMENDED FOR YOU">
+							<option>RECOMMENDED FOR YOU</option>
+							<option>Adventure</option>
+							<option>Animation</option>
+							<option>Biography</option>
+							<option>Crime</option>
+							<option>Comedy</option>
+							<option>Documentary</option>
+							<option>Drama</option>
+						  </select>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div id="introCarousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+      </ol>
+
+      <!-- Inner -->
+      <div class="carousel-inner">        
+			<!-- item -->
+			<div class="carousel-item active">
+			  <div class="mask" style="">
+				<div class="d-flex align-items-center h-100">
+				  <div class="container text-white px-4 mt-5">
+						<img src="img/img-serie1.png" alt="" />
+						<div class="serie__description pt-3 px-2">He is an evil villain who wants to steal the moon. Fortunately for us, three girls are not going to let this happen!</div>
+						<div class="serie__buttons pt-5">
+							<a href="#"><button class="btn btn-primary btn--watch"><i class="fas fa-play"></i> WATCH</button></a>
+							<a href="#"><button class="btn btn-secondary btn--add_list"><i class="fas fa-plus"></i> ADD LIST</button></a>
+						</div>
+				  </div>				  
+				</div>
+			  </div>
+			</div>
+			
+			<!-- item -->
+			<div class="carousel-item">
+			  <div class="mask" style="">
+				<div class="d-flex align-items-center h-100">
+				  <div class="container text-white px-4 mt-5">
+						<img src="img/img-serie1.png" alt="" />
+						<div class="serie__description pt-3 px-2">A new theme park, built on the original site of Jurassic Park, creates a genetically modified hybrid dinosaur, the Indominus Rex, which escapes containment and goes on a killing spree.</div>
+						<div class="serie__buttons pt-5">
+							<a href="#"><button class="btn btn-primary btn--watch"><i class="fas fa-play"></i> WATCH</button></a>
+							<a href="#"><button class="btn btn-secondary btn--add_list"><i class="fas fa-plus"></i> ADD LIST</button></a>
+						</div>
+				  </div>				  
+				</div>
+			  </div>
+			</div>
+      </div>
+      <!-- Inner -->
+    </div>
+  </header>
+  
+  <main class="main__wrap">
+	  <div class="container">
+		<section>
+			<div class="row">
+				<div class="col-md-6 gx-5 mb-4">
+					<h1 class="main__wrap--title"><i class="fas fa-rocket fa-xs"></i> <span class="px-2">Popular in Netflix</span></h4>
+				 </div>
+			</div>
+		</section>
+	  </div>
+	  <div class="popular__movies" id="popular">
+		<div class="bxslider"></div>
+		<script>
+			$(document).ready(function() {
+				$(".bxslider").html("<img src='img/ajax-loader.gif' alt='Loading' width='16' />");	
+				
+				$.get("https://itunes.apple.com/us/rss/topmovies/limit=100/xml" , function(data){
+					$(".bxslider").html("");
+					var texts = "";	
+					$(data).find("entry").each(function(){
+						var vid = $(this).find('id').attr('im:id');						
+						var title = $(this).find("im\\:name").text();
+						var summary = $(this).find("summary").eq(0).text();
+						var image = $(this).find("im\\:image").eq(2).text();
+						var video = $(this).find("link").eq(1).attr("href");
+						var cat = $(this).find("category").eq(0).attr("term");
+						var rdate = $(this).find("im\\:releaseDate").eq(0).attr('label');
+						var rent = $(this).find("im\\:rentalPrice").eq(0).text();
+						var price = $(this).find("im\\:price").eq(0).text();
+						var artist = $(this).find("im\\:artist").text();
+						var bigImg = image.replace('113x170bb.png','300x300bb.png');
+																		
+						body = '';
+						body = body + '<div class="img__container"><img src="'+bigImg+'" alt="" class="w-100 img__image" /><div class="img__middle"><div class="img__text"><a href="#movie_details" data-mdb-toggle="modal"  data-mdb-dismiss="modal" data-mdb-target="#movie_details"   data-mdb-dismiss="modal" data-mdb-target="#movie_details" data-title="'+title.replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,'')+'" data-image="'+bigImg+'" data-summary="'+summary.replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,'')+'" data-category="'+cat+'" data-rdate="'+rdate+'" data-rent="'+rent+'" data-price="'+price+'" data-artist="'+artist+'" data-trailer="'+video+'">Details</a></div></div></div>';
+						body = body + '';
+							
+						$('.bxslider').append(body);
+
+					});//each loop end
+					 					
+					 var slider = $('.bxslider').bxSlider({
+						responsive: true,
+						auto: false,
+						preloadImages: 'visible',
+						pager: false,
+						slideMargin: 15,
+						minSlides: 6,
+						maxSlides: 10,
+						slideWidth: 200,
+						moveSlides: 6,
+					});
+				});
+			});						
+		</script>	
+	  </div>
+	  
+	  <div class="search__results" id="search__results" style="display:none;">
+		  <div class="container">
+			<section>
+				<div class="row">
+					<div class="col-md-9 mb-4">
+						<h1 class="main__wrap--title"><i class="fas fa-video fa-xs"></i> <span class="px-2">Search Movies</span></h4>
+					</div>
+					<div class="col-md-3 mb-4">
+						 <input type="text" class="form-control search-keyword" id="search-keyword" placeholder="Peoples, titles, genre" aria-label="search-keyword" aria-describedby="basic-addon2">
+					</div>
+				</div>
+			</section>
+			<section id="movie__results">
+				<div id="search__results--display"></div>
+			</section>
+		  </div>
+	  </div>
+  </main>
+  
+  
+  <footer class="footer__wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-3 mt-2">
+					<div class="text-center"><a href="#"><img src="img/Netflix-N-logo.png" alt="Netflix" /></a></div>
+				</div>
+				<div class="col mt-2">
+					<ul class="footer__menus">
+						<li><a href="#">Sound and subtitles</a></li>
+						<li><a href="#">Media Center</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Contact with us</a></li>
+					</ul>
+				</div>
+				<div class="col mt-2">
+					<ul class="footer__menus">
+						<li><a href="#">Audio description</a></li>
+						<li><a href="#">Investor relations</a></li>
+						<li><a href="#">Legal information</a></li>
+					</ul>
+				</div>
+				<div class="col mt-2">
+					<ul class="footer__menus">
+						<li><a href="#">Help Center</a></li>
+						<li><a href="#">Work</a></li>
+						<li><a href="#">Cookie settings</a></li>
+					</ul>
+				</div>
+				<div class="col-3 mt-2">
+					<ul class="footer__menus">
+						<li><a href="#">Gift cards</a></li>
+						<li><a href="#">Terms of use</a></li>
+						<li><a href="#">Informations about company</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row mt-5 text-center">
+				<ul class="social__icons">
+					<li class="social__icons--fb"><a href="#"></a></li>
+					<li class="social__icons--insta"><a href="#"></a></li>
+					<li class="social__icons--tw"><a href="#"></a></li>
+					<li class="social__icons--yt"><a href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+  </footer>
+	
+	<script type="text/javascript" src="js/mdb.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.js"></script>
+	<script type='text/javascript' src='js/scroll.js'></script> 
+	<script type='text/javascript' src='js/scripts.js'></script> 
+	
+	<!-- Modal -->
+	<div class="modal fade" id="movie_details" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1" aria-labelledby="movie_title" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h3 class="modal-title">iTunes Preview</h3>
+			<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-3 text-center">
+							<div class="movie--image"><img src="" alt="" class="w-100" /></div>
+							<button type="button" class="btn btn-warning btn-2x" data-mdb-target="#movie_trailer" data-mdb-toggle="modal" data-mdb-dismiss="modal">View Trailer</button>
+						</div>
+						<div class="col-9">
+							<div class="movie__details">
+								<h4 id="movie_title"></h4>
+								<h6 class="movie--artist"></h6>
+								<span class="movie--category"></span> &mdash;
+								<span class="movie--rdate"></span>
+							</div>							
+							<div class="movie__summary"></div>							
+							<div class="movie__options">
+								<button type="button" class="btn btn-warning">Buy <span class="movie--price"></span></button>
+								<button type="button" class="btn btn-success">Rent <span class="movie--rent"></span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+		  </div>
+		  <div class="modal-footer"></div>
+		</div>
+	  </div>
+	</div>
+	
+	<!--modal trailer-->
+	<div class="modal fade" id="movie_trailer" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1" aria-labelledby="movie_title" aria-hidden="true">
+		<div class="modal-dialog-full-width modal-dialog momodel modal-fluid">
+			<div class="modal-content-full-width modal-content ">
+				<div class="modal-body">
+					 <video controls class="movie--trailer" width="100%" height="90%">
+						  <source src="" type="video/mp4">
+						Your browser does not support the video tag.
+					</video> 
+				</div>
+				<div class="modal-footer-full-width modal-footer">
+					<button type="button" class="btn btn-danger btn--back" data-mdb-target="#movie_details" data-mdb-toggle="modal" data-mdb-dismiss="modal">&laquo; Back</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
