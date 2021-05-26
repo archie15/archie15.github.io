@@ -56,7 +56,7 @@ $(function () {
 			$('#search__results--display').html('<img src="img/ajax-loader.gif" alt="loading" />');			
 		
 			var texts = "";
-			$.getJSON("https://itunes.apple.com/search?media=movie&attribute=featureFilmTerm&term="+encodeURI(keyword), function (data) {		
+			$.getJSON("https://itunes.apple.com/search?media=movie&attribute=featureFilmTerm&term="+encodeURI(keyword)+"&callback=?", function (data) {		
 				var count = data.resultCount;
 					if(count>0) {
 						var artist = data.results[0].artistName;
