@@ -37,10 +37,6 @@ $(function () {
 	
 	$('.btn--back').on('hidden.bs.modal', function (e) { 
 		jQuery('.movie--trailer').attr("src", jQuery(".movie--trailer").attr("src"));
-		/*jQuery('.movie--image--img').attr("src", jQuery(".movie--image--img").attr("src"));
-		
-		var img = jQuery(".movie--image--img").attr("src");
-		alert(img);*/
 	}); 
 	
 			
