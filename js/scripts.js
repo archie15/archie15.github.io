@@ -12,6 +12,7 @@ $(function () {
 		
 		var img = $(e.relatedTarget).data('image');
 		$('.movie--image--img').attr('src', img); 
+		$('.movie--image--img').attr('alt', title); 
 		
 		var summary = $(e.relatedTarget).data('summary');
 		$('.movie__summary').html(summary);
