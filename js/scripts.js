@@ -6,7 +6,7 @@ $(function () {
 	});
 	
 	//modal event			
-	$('#movie_details').on('show.bs.modal', function(e) {				
+	$('#movie_details').on('show.bs.modal', function(e) {	
 		var title = $(e.relatedTarget).data('title');
 		$('#movie_title').html(title);
 		
@@ -73,7 +73,7 @@ $(function () {
 				},
 				"success": function (data, textStatus, jqXHR) {
 					console.log(data);
-					data.results.forEach(function (val, index, array) {
+					data.results.foreach(function (val, index, array) {
 						$('#search__results--display').html('');	
 						
 						var artist = val.artistName;
@@ -151,7 +151,7 @@ $(function () {
 		});//each loop end
 							
 		 var slider = $('.bxslider').bxSlider({
-			responsive: true,
+			responsive: false,
 			auto: false,
 			preloadImages: 'visible',
 			pager: false,
@@ -160,6 +160,7 @@ $(function () {
 			maxSlides: 10,
 			slideWidth: 200,
 			moveSlides: 6,
+            touchEnabled: false
 		});
 	});
 });	
