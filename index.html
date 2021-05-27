@@ -11,15 +11,14 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">  
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.min.css">  
     <link rel="stylesheet" href="css/fonts/MyriadPro/style.css" />	 
-    <link rel="stylesheet" href="css/style.css" />
-	 
+    <link rel="stylesheet" href="css/styles.css" />
+		 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-	<script src='js/scripts.js'></script> 	
-	
+	<script src='js/scripts.js'></script> 		
 </head>
 <body>
-	<header>
+    <header class="header">
 		<nav class="navbar navbar-expand-lg navbar-dark d-lg-block">
 			<div class="container">       
 				<a class="navbar-brand nav-link" href="#"><img src="img/logo.png" alt="Netflix" title="Netflix" class="w-75" /> </a>
@@ -46,8 +45,8 @@
 			</div>
 		</nav>
 	
-		<!--sub__header-->
-		<div class="container sub__header">
+		<!--header__sub-->
+		<div class="container header__sub">
 			<div class="row">
 				<div class="col-6 header__genre">
 					<div class="row">
@@ -95,7 +94,7 @@
 		</div>
 	
 		<!--banner__carousel-->
-		<div id="banner__carousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+		<div id="banner__carousel" class="header__carousel carousel slide carousel-fade" data-mdb-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-mdb-target="#banner__carousel" data-mdb-slide-to="0" class="active"></li>
 				<li data-mdb-target="#banner__carousel" data-mdb-slide-to="1"></li>
@@ -136,43 +135,41 @@
 				</div>
 			</div>
 		</div>
-	</header>
-  
-	<main class="main__wrap">
+	</header>  
+	
+	<main class="main">
 		<div class="container">
 			<section>
 				<div class="row">
 					<div class="col-md-6 gx-5 mb-4">
-						<h1 class="main__wrap--title"><i class="fas fa-rocket fa-xs"></i> <span class="px-2">Popular in Netflix</span></h1>
+						<h1 class="title"><i class="fas fa-rocket fa-xs"></i> <span class="px-2">Popular in Netflix</span></h1>
 					 </div>
 				</div>
 			</section>
 		</div>
 		<div class="popular__movies" id="popular">
 			<div class="bxslider"></div>
-		</div>	
-	  
-		<div class="search__results" id="search__results" style="display:none;">
-		  <div class="container">
-			<section>
-				<div class="row">
-					<div class="col-md-9 mb-4">
-						<h1 class="main__wrap--title"><i class="fas fa-video fa-xs"></i> <span class="px-2">Search Movies</span></h1>
-					</div>
-					<div class="col-md-3 mb-4">
-						 <input type="text" class="form-control search-keyword" id="search-keyword" placeholder="Peoples, titles, genre" aria-label="search-keyword">
-					</div>
-				</div>
-			</section>
-			<div id="movie__results">
-				<div id="search__results--display"></div>
-			</div>
-		  </div>
 		</div>
+		<div class="search__results" id="search__results" style="display:none;">
+			<div class="container">
+				<section>
+					<div class="row">
+						<div class="col-md-9 mb-4">
+							<h1 class="title"><i class="fas fa-video fa-xs"></i> <span class="px-2">Search Movies</span></h1>
+						</div>
+						<div class="col-md-3 mb-4">
+							<input type="text" class="form-control search-keyword" id="search-keyword" placeholder="Peoples, titles, genre" aria-label="search-keyword">
+						</div>
+					</div>
+				</section>
+				<div id="movie__results">
+					<div id="search__results--display"></div>
+				</div>
+			</div>
+		</div>	
 	</main>
-  
-  
-	<footer class="footer__wrap">
+
+	<footer class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-12 mt-2">
@@ -211,71 +208,71 @@
 		</div>
 		<div class="container">
 			<div class="row mt-5 text-center">
-				<ul class="social__icons">
-					<li class="social__icons--fb"><a href="#"></a></li>
-					<li class="social__icons--insta"><a href="#"></a></li>
-					<li class="social__icons--tw"><a href="#"></a></li>
-					<li class="social__icons--yt"><a href="#"></a></li>
+				<ul class="footer_social">
+					<li class="footer_social--fb"><a href="#"></a></li>
+					<li class="footer_social--insta"><a href="#"></a></li>
+					<li class="footer_social--tw"><a href="#"></a></li>
+					<li class="footer_social--yt"><a href="#"></a></li>
 				</ul>
 			</div>
 		</div>
 	</footer>
-	  
-	<script src="js/mdb.min.js"></script> 
+        
+        
+    <script src="js/mdb.min.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.js"></script>
 	<script src='js/scroll.js'></script> 
 
 	<!-- Modal -->
 	<div class="modal fade" id="movie_details" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1" aria-labelledby="movie_title" aria-hidden="true">
-	  <div class="modal-dialog modal-dialog-scrollable modal-xl">
-		<div class="modal-content">
-		  <div class="modal-header">
-			<h3 class="modal-title">iTunes Preview</h3>
-			<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+		<div class="modal-dialog modal-dialog-scrollable modal-xl">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h3 class="modal-title">iTunes Preview</h3>
+			  <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				  <div class="container-fluid">
+					  <div class="row">
+						  <div class="col-md-3 col-12 text-center">
+							  <div class="movie--image"><img src="img/iTunes.png" alt="" class="w-100 movie--image--img" /></div>
+							  <button type="button" class="btn btn-warning btn-2x" data-mdb-target="#movie_trailer" data-mdb-toggle="modal" data-mdb-dismiss="modal">View Trailer</button>
+						  </div>
+						  <div class="col-md-9 col-12">
+							  <div class="movie__details">
+								  <h4 id="movie_title">Netflix</h4>
+								  <h6 class="movie--artist">Netflix - Artist</h6>
+								  <span class="movie--category"></span> &mdash; <span class="movie--rdate"></span>
+							  </div>							
+							  <div class="movie__summary"></div>							
+							  <div class="movie__options">
+								  <button type="button" class="btn btn-warning">Buy <span class="movie--price"></span></button>
+								  <button type="button" class="btn btn-success">Rent <span class="movie--rent"></span></button>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			</div>
+			<div class="modal-footer"></div>
 		  </div>
-		  <div class="modal-body">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-3 col-12 text-center">
-							<div class="movie--image"><img src="img/iTunes.png" alt="" class="w-100 movie--image--img" /></div>
-							<button type="button" class="btn btn-warning btn-2x" data-mdb-target="#movie_trailer" data-mdb-toggle="modal" data-mdb-dismiss="modal">View Trailer</button>
-						</div>
-						<div class="col-md-9 col-12">
-							<div class="movie__details">
-								<h4 id="movie_title">Netflix</h4>
-								<h6 class="movie--artist">Netflix - Artist</h6>
-								<span class="movie--category"></span> &mdash; <span class="movie--rdate"></span>
-							</div>							
-							<div class="movie__summary"></div>							
-							<div class="movie__options">
-								<button type="button" class="btn btn-warning">Buy <span class="movie--price"></span></button>
-								<button type="button" class="btn btn-success">Rent <span class="movie--rent"></span></button>
-							</div>
-						</div>
-					</div>
-				</div>
-		  </div>
-		  <div class="modal-footer"></div>
 		</div>
 	  </div>
-	</div>
-
-	<!--modal trailer-->
-	<div class="modal fade" id="movie_trailer" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1" aria-labelledby="movie_title" aria-hidden="true">
-		<div class="modal-dialog-full-width modal-dialog momodel modal-fluid">
-			<div class="modal-content-full-width modal-content ">
-				<div class="modal-body">
-					 <video controls class="movie--trailer">
-						<source src="https://www.youtube.com/watch?v=TaVFCdwT0hk" type="video/mp4">
-						Your browser does not support the video tag.
-					</video> 
-				</div>
-				<div class="modal-footer-full-width modal-footer">
-					<button type="button" class="btn btn-danger btn--back" data-mdb-target="#movie_details" data-mdb-toggle="modal" data-mdb-dismiss="modal">&laquo; Back</button>
-				</div>
-			</div>
-		</div>
-	</div>
-		
-</body>
+  
+	  <!--modal trailer-->
+	  <div class="modal fade" id="movie_trailer" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1" aria-labelledby="movie_title" aria-hidden="true">
+		  <div class="modal-dialog-full-width modal-dialog momodel modal-fluid">
+			  <div class="modal-content-full-width modal-content ">
+				  <div class="modal-body">
+					   <video controls class="movie--trailer">
+						  <source src="https://www.youtube.com/watch?v=TaVFCdwT0hk" type="video/mp4">
+						  Your browser does not support the video tag.
+					  </video> 
+				  </div>
+				  <div class="modal-footer-full-width modal-footer">
+					  <button type="button" class="btn btn-danger btn--back" data-mdb-target="#movie_details" data-mdb-toggle="modal" data-mdb-dismiss="modal">&laquo; Back</button>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+</body>    
 </html>
