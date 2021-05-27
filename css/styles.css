@@ -230,6 +230,31 @@ input [type="text"]:focus {
   opacity: 1;
 }
 
+.header__carousel .serie_presents--illu {
+  text-transform: uppercase;
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1.2px;
+  font-family: "Myriad Pro Condensed";
+  text-shadow: 2px 2px 5px #381008;
+}
+
+.header__carousel .serie_presents--illu sub {
+  font-size: 15px;
+}
+
+.header__carousel .serie_presents--actor {
+  color: #f71d0f;
+  font-size: 75px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 70px;
+  letter-spacing: -1px;
+  font-family: "Myriad Pro Bold Condensed";
+  text-shadow: 2px 2px 5px #381008;
+}
+
 .header__carousel .serie__description {
   width: 30%;
   font-size: 17px;
@@ -677,6 +702,23 @@ input [type="text"]:focus {
   .header__carousel .carousel-item {
     text-align: center;
   }
+  .header__carousel .serie_presents--illu {
+    font-size: 20px;
+    letter-spacing: -1.2px;
+    font-family: "Myriad Pro Condensed";
+    text-shadow: 2px 2px 5px #333333;
+  }
+  .header__carousel .serie_presents--illu sub {
+    font-size: 15px;
+  }
+  .header__carousel .serie_presents--actor {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -5px;
+    font-family: "Myriad Pro Bold Condensed";
+    text-shadow: 2px 2px 5px #333333;
+  }
   .header__carousel .serie__description {
     width: 100%;
     text-align: center;
@@ -743,6 +785,11 @@ input [type="text"]:focus {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /*
+  */
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 /* Height for devices larger than 576px */
 @media (min-width: 992px) {
