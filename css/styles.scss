@@ -833,6 +833,7 @@ input {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 }
+
 /* Height for devices larger than 576px */
 @media (min-width: 992px) {
   #banner__carousel {
@@ -840,5 +841,63 @@ input {
   }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 1199px) {
+  .header {
+    &__sub {
+      .title {
+        font-size: 20px;
+      }
+    }
+
+    .btn-primary {
+      padding: 10px 25px 8px 20px;
+      font-size: 12px;
+
+      &:hover {
+        padding: 10px 25px 8px 20px;
+        font-size: 12px;
+      }
+    }
+
+    .btn-secondary {
+      padding: 10px 25px 8px 20px;
+      font-size: 12px;
+
+      &:hover {
+        padding: 10px 25px 8px 20px;
+        font-size: 12px;
+      }
+    }
+
+    &__carousel {
+      margin-top: 50px;
+      .serie_presents--illu {
+        font-size: 26px;
+      }
+
+      .serie__description {
+        width: 100%;
+        font-size: 15px;
+        margin: 25px 0;
+      }
+
+      .serie_presents--actor {
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 55px;
+        letter-spacing: -1px;
+
+        span {
+          font-size: 85px;
+          display: block;
+        }
+      }
+    }
+  } //header
+
+  .main {
+    .title {
+      margin-top: 25px;
+    }
+  }
 }

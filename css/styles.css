@@ -802,4 +802,50 @@ input [type="text"]:focus {
     margin-top: -130px;
   }
 }
+
+@media only screen and (max-width: 1199px) {
+  .header__sub .title {
+    font-size: 20px;
+  }
+  .header .btn-primary {
+    padding: 10px 25px 8px 20px;
+    font-size: 12px;
+  }
+  .header .btn-primary:hover {
+    padding: 10px 25px 8px 20px;
+    font-size: 12px;
+  }
+  .header .btn-secondary {
+    padding: 10px 25px 8px 20px;
+    font-size: 12px;
+  }
+  .header .btn-secondary:hover {
+    padding: 10px 25px 8px 20px;
+    font-size: 12px;
+  }
+  .header__carousel {
+    margin-top: 50px;
+  }
+  .header__carousel .serie_presents--illu {
+    font-size: 26px;
+  }
+  .header__carousel .serie__description {
+    width: 100%;
+    font-size: 15px;
+    margin: 25px 0;
+  }
+  .header__carousel .serie_presents--actor {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 55px;
+    letter-spacing: -1px;
+  }
+  .header__carousel .serie_presents--actor span {
+    font-size: 85px;
+    display: block;
+  }
+  .main .title {
+    margin-top: 25px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
