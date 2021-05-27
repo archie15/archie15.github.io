@@ -189,6 +189,7 @@ input [type="text"]:focus {
 
 .header__sortby .select__recommended {
   text-align: left;
+  width: 220px;
 }
 
 .header .carousel-inner,
