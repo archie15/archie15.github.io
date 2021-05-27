@@ -698,9 +698,6 @@ input [type="text"]:focus {
   .header__sub .chosen-wrapper .chosen-container .chosen-drop {
     width: 85%;
   }
-  .header__sub .sortby__list__letters {
-    margin-bottom: 5px;
-  }
   .header__sub__genre .genre__header {
     width: 60%;
   }
@@ -822,9 +819,6 @@ input [type="text"]:focus {
   .header .btn-secondary:hover {
     padding: 10px 25px 8px 20px;
     font-size: 12px;
-  }
-  .header__carousel {
-    margin-top: 50px;
   }
   .header__carousel .serie_presents--illu {
     font-size: 26px;
