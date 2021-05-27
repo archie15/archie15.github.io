@@ -357,6 +357,29 @@ input {
     margin-top: 50px;
   }
 
+  .search-keyword {
+    width: 300px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #ececec;
+    padding: 4px 8px;
+
+    &:focus {
+      background: #000000;
+      color: #ffffff;
+      border: 1px solid #ececec;
+      outline: none;
+    }
+
+    &:active {
+      background: #000000;
+      color: #ffffff;
+      border: 1px solid #ececec;
+      outline: none;
+    }
+  }
+
   .bxslider {
     div img {
       border-radius: 10px;
