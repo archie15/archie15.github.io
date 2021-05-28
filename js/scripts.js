@@ -93,7 +93,7 @@ $(function () {
 		
 			var texts = "";
 			var i = 0;
-			$.getJSON("https://itunes.apple.com/search?media=movie&attribute=featureFilmTerm&term="+encodeURI(keyword)+"&callback=?", function (data) {		
+			$.getJSON("https://itunes.apple.com/search?limit=10&media=movie&attribute=featureFilmTerm&term="+encodeURI(keyword)+"&callback=?", function (data) {		
 				var count = data.resultCount;
 				texts = '<div class="container"> <div class="row text-center">';
 					if(count>0) {
