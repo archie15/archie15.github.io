@@ -112,7 +112,7 @@ $(function () {
 							var img = field.artworkUrl100;
 							var bigImg = img.replace('100x100bb.jpg','300x300bb.jpg');
 						
-							texts = texts + '<div class="col-md-2 col-2"><div class="img__container"><img src="'+bigImg+'" alt="" class="w-100 img__image" /><div class="img__middle"><button class="btn btn--details" data-mdb-toggle="modal" data-mdb-dismiss="modal" data-mdb-target="#movie_details" data-title="'+title.replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,'')+'" data-image="'+bigImg+'" data-summary="'+summary.replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,'')+'" data-category="'+cat+'" data-rdate="'+rdate+'" data-rent="'+rent+'" data-price="'+price+'" data-artist="'+artist+'" data-trailer="'+video+'">Details</button></div></div></div>';
+							texts = texts + '<div class="col-md-2 col-2"><div class="img__container mb-4"><img src="'+bigImg+'" alt="" class="w-100 img__image" /><div class="img__middle"><button class="btn btn--details" data-mdb-toggle="modal" data-mdb-dismiss="modal" data-mdb-target="#movie_details" data-title="'+title.replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,'')+'" data-image="'+bigImg+'" data-summary="'+summary.replace(/[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,'')+'" data-category="'+cat+'" data-rdate="'+rdate+'" data-rent="'+rent+'" data-price="'+price+'" data-artist="'+artist+'" data-trailer="'+video+'">Details</button></div></div></div>';
 							
 						});				
 					}else {
