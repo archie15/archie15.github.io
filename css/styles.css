@@ -477,8 +477,8 @@ input [type="text"]:focus {
 
 .main .img__container {
   position: relative;
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 20px auto;
 }
 
 .main .img__container .img__image {
