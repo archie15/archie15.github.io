@@ -683,6 +683,15 @@ input [type="text"]:focus {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 320px) {
+  .header__sub .chosen-wrapper .chosen-container .chosen-drop {
+    width: 65%;
+  }
+  .header__sub .chosen-wrapper .chosen-container-single .chosen-single {
+    width: 65%;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
   .header__sortby .sortby__list {
@@ -690,7 +699,7 @@ input [type="text"]:focus {
   }
   .header__sub .chosen-wrapper {
     margin-top: 5px;
-    width: 200px;
+    width: 100%;
     color: #ffffff;
   }
   .header__sub .chosen-wrapper .chosen-container-single .chosen-single {

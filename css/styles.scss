@@ -680,6 +680,35 @@ input {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 320px) {
+  .header {
+    &__sub {
+      .chosen-wrapper {
+        margin-top: 5px;
+        width: 100%;
+        color: #ffffff;
+
+        .chosen-container-single .chosen-single {
+          width: 85%;
+        }
+
+        .chosen-container {
+          .chosen-drop {
+            width: 85%;
+          }
+        }
+      }
+
+      &__genre {
+        .genre__header {
+          width: 60%;
+        }
+      }
+    }
+  }
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
   .header {
@@ -692,7 +721,7 @@ input {
     &__sub {
       .chosen-wrapper {
         margin-top: 5px;
-        width: 200px;
+        width: 100%;
         color: #ffffff;
 
         .chosen-container-single .chosen-single {
