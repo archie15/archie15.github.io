@@ -1,2 +1,2 @@
 # archie15.github.io
-# this is my technical exam
+# first quasar app project
